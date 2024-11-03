@@ -24,34 +24,24 @@ Label: Classification label (real or fake).
 Project Structure
 bash
 نسخ الكود
-Installation
-Clone the repository:
-
-bash
-نسخ الكود
-cd FakeNewsDetection
-Install dependencies:
-
-bash
-نسخ الكود
-pip install -r requirements.txt
 Usage
 Data Preprocessing: Run the preprocessing script to clean and prepare the data for training.
 
 python
-نسخ الكود
+
 python src/preprocessing.py
 Model Training: Train the model using the prepared data.
 
 python
-نسخ الكود
+
 python src/model.py
 Evaluate the Model: Run evaluation metrics to see the accuracy and performance.
 
 python
-نسخ الكود
+
 python src/evaluation.py
 Prediction: Use the trained model to predict on new data.
+
 
 Methodology
 Data Cleaning and Preprocessing: Removing stopwords, punctuation, and other unnecessary elements from the text to standardize and simplify the data.
