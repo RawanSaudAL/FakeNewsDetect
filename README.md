@@ -51,8 +51,7 @@ Evaluation: Assessing model performance using metrics like accuracy, precision, 
 Results
 The final model achieves a high accuracy rate, demonstrating effectiveness in distinguishing fake news from real news articles. Further results and model metrics are available in the notebooks section.
 
-Contributing
-Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request.
+
 
 License
 This project is licensed under the MIT License.
