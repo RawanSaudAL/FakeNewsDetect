@@ -38,7 +38,6 @@ Clone the repository:
 
 bash
 نسخ الكود
-git clone https://github.com/yourusername/FakeNewsDetection.git
 cd FakeNewsDetection
 Install dependencies:
 
