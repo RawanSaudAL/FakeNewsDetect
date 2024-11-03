@@ -24,15 +24,6 @@ Label: Classification label (real or fake).
 Project Structure
 bash
 نسخ الكود
-├── data/                   # Contains the dataset files
-├── models/                 # Trained models and saved versions
-├── notebooks/              # Jupyter notebooks for exploration and analysis
-├── src/                    # Source code files
-│   ├── preprocessing.py    # Text preprocessing and cleaning functions
-│   ├── model.py            # Model training and evaluation scripts
-│   ├── utils.py            # Helper functions and utilities
-├── README.md               # Project README file
-└── requirements.txt        # Python dependencies
 Installation
 Clone the repository:
 
