@@ -1,57 +1,53 @@
-Fake News Detection using NLP and Machine Learning
-This project aims to develop a machine learning model capable of distinguishing between real and fake news articles. By leveraging Natural Language Processing (NLP) techniques and a robust dataset from Kaggle, the model applies advanced text processing and machine learning algorithms to enhance accuracy in classifying news content. This project seeks to contribute to the growing need for reliable tools that support information veracity in digital media.
+# Fake News Detection using NLP and Machine Learning
 
-Table of Contents
-Project Overview
-Dataset
-Project Structure
-Installation
-Usage
-Methodology
-Results
-Contributing
-License
-Project Overview
-With the increase in misinformation, it’s essential to have tools that help distinguish genuine news from fake. This project builds a classifier to detect fake news using text data and NLP. The approach combines multiple machine learning techniques, including preprocessing of text, feature extraction, and model training to ensure accurate classification.
+This project aims to develop a Fake News Detection model using Natural Language Processing (NLP) and Machine Learning techniques to distinguish between real and fake news articles. With a large dataset sourced from Kaggle, the project applies various text processing and machine learning algorithms to enhance the reliability of information veracity in digital media.
 
-Dataset
-The dataset used for this project is sourced from Kaggle, containing a large number of news articles labeled as either real or fake. This labeled dataset is crucial for training the machine learning model effectively.
+# Project Overview
 
-Key Features of the Dataset:
-Title: The headline or title of the news article.
-Text: The main content or body of the news article.
-Label: Classification label (real or fake).
-Project Structure
-bash
-نسخ الكود
-Usage
-Data Preprocessing: Run the preprocessing script to clean and prepare the data for training.
-
-python
-
-python src/preprocessing.py
-Model Training: Train the model using the prepared data.
-
-python
-
-python src/model.py
-Evaluate the Model: Run evaluation metrics to see the accuracy and performance.
-
-python
-
-python src/evaluation.py
-Prediction: Use the trained model to predict on new data.
+Objective: Accurately classify news content as real or fake using NLP and machine learning.
+Dataset: A large Kaggle dataset with 20,800 samples for training and 5,200 samples for testing.
 
 
-Methodology
-Data Cleaning and Preprocessing: Removing stopwords, punctuation, and other unnecessary elements from the text to standardize and simplify the data.
-Feature Extraction: Transforming text data into numerical features using TF-IDF or word embeddings.
-Model Selection and Training: Experimenting with multiple machine learning algorithms like Logistic Regression, SVM, and Naive Bayes to find the best model for the task.
-Evaluation: Assessing model performance using metrics like accuracy, precision, recall, and F1-score.
-Results
-The final model achieves a high accuracy rate, demonstrating effectiveness in distinguishing fake news from real news articles. Further results and model metrics are available in the notebooks section.
+# Key Components
+
+1. Exploratory Data Analysis (EDA):
+   - Initial inspection of data structure, distribution of real vs. fake news labels.
+   - Visualizations and summary statistics to understand data characteristics.
+
+2. Data Preprocessing:
+   -Cleaning: Removing stop words, links, numbers, and irrelevant content.
+   - Tokenization: Breaking text into smaller units (tokens).
+   - Stemming & Lemmatization: Reducing words to their base forms for better analysis.
+
+3. Word Cloud Visualization:
+   - Word clouds for both fake and real news to identify commonly used words in each category.
+
+4. Vectorization:
+   - TF-IDF Vectorizer to convert text data into numerical form for model training.
+
+5. Machine Learning Models:
+   - Logistic Regression: Achieved 96.63% accuracy.
+   - Support Vector Machine (SVM): Achieved 97.98% accuracy.
+   - Naive Bayes: Achieved 86.44% accuracy, with a higher tendency to correctly classify fake news.
+
+# Results and Insights
+
+Model Performance:
+   - Both Logistic Regression and SVM showed high accuracy and consistency in detecting fake news.
+   - Naive Bayes, while slightly less accurate, demonstrated robust identification for fake news.
+
+# Conclusion:
+The results affirm the effectiveness of NLP and machine learning in filtering fake news, supporting reliable media consumption.
+
+# File Structure
+
+nlp_project.ipynb: Main notebook containing all code for EDA, pre processing, modeling, and evaluation.
 
 
 
-License
-This project is licensed under the MIT License.
+# Usage
+
+Run `nlp_project.ipynb` in a Jupyter Notebook environment to:
+1. Load and preprocess the dataset.
+2. Train and evaluate the machine learning models.
+3. View visualizations and performance metrics for each model.
